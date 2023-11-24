@@ -62,6 +62,7 @@ const checkExpenses = (state, limits) =>
       : entry;
   });
 
+//Impure
 const finalBudget = checkExpenses(newBudget3, spendingLimits);
 
 const logBigExpenses = function (state, bigLimit) {
@@ -71,6 +72,8 @@ const logBigExpenses = function (state, bigLimit) {
     .join(' / ');
 
   // .reduce((str, cur) => `${str} / ${cur.description.slice(-2)}`, '');
+
+  console.log(bigExpenses);
 
   //   let output = '';
   //   for (const el of budget) {
